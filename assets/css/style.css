@@ -1,0 +1,414 @@
+:root {
+    --primary-color: #0D0C0D;
+    --white-color: #FFFFFF;
+    --gray-color: #666870;
+    --gap: 3rem;
+}
+
+* {
+    margin: 0%;
+    padding: 0%;
+    
+}
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    
+}
+
+body {
+    font-family: sans-serif;
+    font-size: 2.2rem;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+h1 {
+    font-size: 6rem;
+}
+
+h2 {
+    font-size: 5.5rem;
+}
+
+h3 {
+    font-size: 5rem;
+}
+
+h4 {
+    font-size: 4.5rem;
+}
+
+h5 {
+    font-size: 4rem;
+}
+
+h6 {
+    font-size: 3.5rem;
+}
+
+.section {
+    min-height: 100vh;
+    padding: 8rem;
+    
+    
+}
+
+.main-bg {
+    background-image: url('../img/mainvgfundo.svg.svg');
+    background-size: cover;
+    background-position: center center;   
+    color: var(--white-color);
+}
+.white-bg {  
+    background-color: var(--white-color);
+
+    
+}
+.main-content {
+    max-width: 120rem;
+    margin: 0 auto;
+    padding: 8rem var(--gap);
+   
+}
+
+.menu-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+
+.menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 1;
+    border-bottom: 0.1rem solid var(--gray-color);
+}
+nav a:hover {
+    background-color: rgba(0, 0, 0, 0.4);
+}
+.menu ul {
+    list-style: none;
+    display: flex;
+
+}
+.menu h1 {
+    font-size: 2.3rem;
+    
+}
+.menu h1 a {
+    color: var(--primary-color);
+}
+.menu ul li a {
+    display: block;
+    padding: 2rem;
+    font-size: 1.8rem;
+    font-family: 'Montserrat', sans-serif;
+    color: var(--primary-color);
+}
+.div-espacamento {
+    height: 6.5rem;
+}
+.intro-content {
+    max-width: 100%;
+    display: grid;
+    top: -8rem;
+    grid-template-columns: 1fr 1.5fr;
+    gap: var(--gap);
+    min-height: 100vh;
+}
+
+.intro-text-content .intro-img-content {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+}
+
+.intro-text-content h2 {
+   
+    text-transform: uppercase;
+    font-size: 6rem;
+    margin-bottom: 5rem;
+    line-height: 1.2;
+}
+
+.intro-img-content img {
+    max-width: 100%;
+    height: auto;
+}
+h1 img {
+    
+    width: 6rem;
+    height: 6rem;
+}
+
+.div-trabalho h2 {
+  
+color: var(--primary-color);
+text-transform: uppercase;
+font-size: 6rem;
+margin-bottom: 5rem;
+line-height: 1.2;
+margin-top: 8rem;   
+
+
+}
+
+.div-trabalho {
+    max-width: 100%;
+    min-height: 100vh;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    max-width: 64rem;
+    text-align: center;
+    
+}
+
+.div-trabalho p {
+    color: var(--primary-color);
+}
+
+.produtos-content {
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    
+}
+.grid {
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    counter-reset: grid-counter;
+    gap: var(--gap);
+}
+.grid h3 {
+    font-size: 3rem;
+    position: relative;
+    padding-left: 5rem;
+    padding-bottom: 3rem;
+}
+.grid h3::before {
+    counter-increment: grid-counter;
+    content: counter(grid-counter);
+    font-size: 8rem;
+    font-style: italic;
+    position: absolute;
+    top: -3rem;
+    left: -2rem;
+    transform:rotate(5deg)
+}
+.grid-main-heading{
+    padding-bottom:2rem ;
+}
+.grid-description{
+    padding-bottom: 5rem;
+}
+
+
+
+.fotos-img {
+    width: 100%;
+    max-height: 36rem;
+    max-width: 36rem;
+    overflow: hidden;
+}
+
+.fotos-img img{
+    transition: all 300ms ease-in-out;
+}
+
+.fotos-img img:hover{
+    transform: translate(-3%, 3%) scale(1.2) rotate(4deg);
+}
+
+.foto-main-heading {
+    color: var(--primary-color);
+}
+.foto-description {
+    color: var(--primary-color);
+}
+
+
+
+
+
+
+td, th {
+    color: var(--primary-color);
+}
+.responsive-table {
+    overflow: hidden;
+    overflow-x: scroll;
+   
+    
+}
+
+table {
+    min-width: 36rem;
+    width: 100%;
+    border-collapse: collapse;
+    
+}
+
+table td, table th{
+    white-space: nowrap;
+    padding: 0.5rem;
+    text-align: left;
+    border: 0.1rem solid ;
+    border-color: gray
+}
+thead {
+    background-color: gray;
+}
+tfoot {
+    
+    background-color: gray;
+}
+caption {
+    color: var(--primary-color);
+    text-align: left;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.contato-content {
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: var(--gap);
+    min-height: 100vh;
+}
+
+.contato-text-content .intro-img-content {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+}
+
+.contato-text-content h2 {
+   
+    text-transform: uppercase;
+    font-size: 5rem;
+    margin-bottom: 4rem;
+    line-height: 1.2;
+}
+
+.contato-img-content img {
+    max-width: 100%;
+    height: auto;
+}
+
+.contact-form {
+    grid-column: span 2; 
+   
+}
+.contact-form .form-grid{
+    border: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: var(--gap);
+}
+
+.form-group {
+    flex: 1 1 32rem;
+    
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 1rem;
+    cursor: pointer;
+}
+
+.form-group input,
+.form-group textarea {
+    box-sizing: border-box;
+    border: none;
+    background-color: var(--white-color);
+    padding: 1.5rem;
+    width: 100%;
+    font-size: 2rem;
+}
+
+div .full-width {
+    width: 100%;
+    flex: 1 1 100%;
+}
+
+.form-group button {
+    display: block;
+    justify-content: space-between;
+    border: 0.5rem solid var(--white-color);
+    background:none;
+    color: var(--white-color);
+    padding: 1.5rem 2rem;
+    font-size: 3rem;
+    cursor: pointer;
+    transition: all 300ms ease-in-out;
+}
+.form-group button:hover {
+    background-color: var(--white-color);
+    color: var(--primary-color);
+
+}
+.form-grid legend {
+    text-transform: uppercase;
+    font-size: 3rem;
+    display: block;
+    margin-bottom: 2rem;
+}
+.form-group ::placeholder {
+    color: var(--gray-color);
+}
+
+.footer {
+    text-align: center;
+    font-size: 2rem;
+    width: 100%;
+
+}
+.footer a {
+    color: var(--primary-color);
+   
+}
+
+.footer p {
+    margin: 0;
+    padding: 3rem;
+}
+
+@media (max-width: 800px) {
+    .intro-content .grid{
+        grid-template-columns: 1fr;
+    }
+
+    .fotos-img {
+        width: 100%;
+        max-width: 100%;
+        max-height: 100%;
+    }
+    .fotos-img img {
+        width: 100%;
+    }
+    
+}
